@@ -6,7 +6,8 @@ class Program
     {
         Array(10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-        int[,] matriz = {
+        int[,] matriz =
+        {
             { 1, 2 },
             { 2, 3 },
             { 3, 4 },
@@ -15,6 +16,7 @@ class Program
 
         Matriz(4, 2, matriz);
     }
+
     static void Array(int tamanho, params int[] valores)
     {
         int[] array = new int[tamanho];
@@ -22,6 +24,7 @@ class Program
         {
             array[i] = valores[i];
         }
+
         foreach (var i in array)
         {
             Console.WriteLine($" {i} ");
@@ -39,6 +42,7 @@ class Program
                 matriz[i, j] = valores[i, j];
             }
         }
+
         for (int i = 0; i < matriz.GetLength(0); i++)
         {
             for (int j = 0; j < matriz.GetLength(1); j++)
@@ -46,6 +50,5 @@ class Program
                 Console.WriteLine($" {matriz[i, j]}");
             }
         }
-
     }
 }
