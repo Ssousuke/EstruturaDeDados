@@ -1,6 +1,6 @@
 ﻿namespace Util;
 
-public class OperacoesArray
+public class BurbbleSort
 {
     public void BubbleSort(ref int[] array)
     {
