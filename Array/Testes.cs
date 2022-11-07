@@ -13,6 +13,12 @@
             };
 
         array.Matriz(4, 2, matriz);
-    }
 
+
+        BurbbleSort burbbleSort = new BurbbleSort();
+        var bSortArray = new int[10] { 6, 7, 8, 1, 2, 3, 10, 100, 13, 70 };
+
+        burbbleSort.BubbleSort(ref bSortArray);
+        burbbleSort.ImprimirArray(bSortArray);
+    }
 }
